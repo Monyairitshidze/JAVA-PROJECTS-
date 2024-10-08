@@ -27,8 +27,9 @@ public class LinkedLists {
     public void show() {
         Node node = head;
         
-        if(node.next != null) {
+        while(node.next != null) {
             System.out.println(node.data);
+            node = node.next;
         }
         
         System.out.println(node.data);
